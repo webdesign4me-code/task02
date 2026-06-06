@@ -92,7 +92,7 @@
 
     .feature-section.reverse { flex-direction: row-reverse; }
 
-    .feature-section.bg-light { background: #f7f7f7; }
+    .feature-section.bg-light { background: #ffffff; }
 
     .feat-img {
       flex: 1;
