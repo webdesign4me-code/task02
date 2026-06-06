@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catchhub</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-left">
+      <img class="hero-logo" src="logo.png" alt="Catchhub">
+      <p class="hero-tagline">Watch. Communicate. Create.</p>
+      <p class="hero-sub">Everything you need to socialise</p>
+      <div class="store-btns">
+        <span class="store-btn"><img src="play_store.png" alt="Android App Store"/></span>
+        <span class="store-btn"><img src="app_store.png" alt="Apple App Store"/></span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="top_screens.png" alt="Catchhub app screens">
+    </div>
+  </section>
+
+  <section class="feature-section bg-light reveal">
+    <div class="feat-img">
+      <img src="sec_screens.png" alt="Channels screens">
+    </div>
+    <div class="feat-text">
+      <h2 class="feat-label">Channels</h2>
+      <p class="feat-body">
+        Enjoy the videos and music you love.<br/>
+        Create your own business<br/>
+        or entertainment channel.
+      </p>
+    </div>
+  </section>
+
+  <section class="feature-section reverse reveal">
+    <div class="feat-img">
+      <img src="thhh_screens.png" alt="Messages">
+    </div>
+    <div class="feat-text">
+      <h2 class="feat-label">Messages</h2>
+      <p class="feat-body">
+        Communicate seamlessly.<br/>
+        Create your own professional<br/>
+        or social group chat
+      </p>
+    </div>
+  </section>
+
+  <section class="feature-section bg-light reveal">
+    <div class="feat-img">
+      <img src="for_screens.png" alt="Future features screens">
+    </div>
+    <div class="feat-text">
+      <div class="future-icons">
+        <img src="vectors.png" alt="Future icons">
+      </div>
+      <h2 class="feat-label">In Future</h2>
+      <p class="feat-body">
+        Communicate seamlessly.<br/>
+        Create your own professional<br/>
+        or social group chat
+      </p>
+    </div>
+  </section>
+
+  <footer class="reveal">
+    <p class="footer-cta">For download click here:</p>
+    <div class="footer-stores">
+      <img src="play_store.png" alt="Android">
+      <img src="app_store.png" alt="Apple">
+    </div>
+    <p class="footer-contact">
+      Any questions? Feel free to <a href="#">CONTACT US</a>
+    </p>
+    <div class="footer-brand">
+      <img src="peratude.png" alt="Peratude logo"/>
+      <span>Peratude</span>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
