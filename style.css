@@ -229,43 +229,48 @@
       transform: translateY(0);
     }
 
-    @media (max-width: 700px) {
-      @media (max-width: 700px) {
+    
+  @media (max-width: 700px) {
   .hero {
-    padding: 40px 5%;
+    flex-direction: row;
+    padding: 30px 4%;
     min-height: unset;
-    gap: 20px;
+    gap: 16px;
+    align-items: center;
   }
 
   .hero-left {
     min-width: unset;
+    flex: 1;
   }
 
   .hero-logo {
-    width: 160px;
-    margin-bottom: 12px;
+    width: 110px;
+    margin-bottom: 8px;
   }
 
   .hero-tagline {
-    font-size: 11px;
-    letter-spacing: 2px;
+    font-size: 7px;
+    letter-spacing: 1.5px;
     margin-bottom: 4px;
   }
 
   .hero-sub {
-    font-size: 11px;
-    margin-bottom: 20px;
+    font-size: 8px;
+    margin-bottom: 14px;
   }
 
   .store-btns {
-    gap: 8px;
+    gap: 6px;
+    flex-wrap: nowrap;
   }
 
   .store-btn img {
-    height: 32px;
+    height: 24px;
   }
 
   .hero-right {
+    flex: 1;
     min-width: unset;
   }
 
@@ -273,31 +278,71 @@
     max-width: 100%;
   }
 
-  .feature-section {
-    padding: 50px 5%;
-    gap: 20px;
+  .feature-section,
+  .feature-section.reverse {
+    flex-direction: row;
+    padding: 36px 4%;
+    gap: 16px;
+    text-align: left;
   }
 
-  .feat-label {
-    font-size: 18px;
-    letter-spacing: 3px;
-    margin-bottom: 12px;
-    text-align: center;
+  .feature-section.reverse {
+    flex-direction: row-reverse;
   }
 
-  .feat-body {
-    font-size: 13px;
-    line-height: 1.7;
-    text-align: center;
+  .feat-img {
+    flex: 1;
+    min-width: unset;
   }
 
   .feat-img img {
     max-width: 100%;
   }
 
-  .footer-stores img {
-    height: 32px;
+  .feat-text {
+    flex: 1;
+    min-width: unset;
   }
-}
+
+  .feat-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+
+  .feat-body {
+    font-size: 9px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .future-icons img {
+    max-width: 160px;
+  }
+
+  footer {
+    padding: 36px 6% 28px;
+  }
+
+  .footer-cta {
+    font-size: 11px;
+  }
+
+  .footer-stores img {
+    height: 28px;
+  }
+
+  .footer-contact {
+    font-size: 11px;
+  }
+
+  .footer-brand img {
+    width: 28px;
+  }
+
+  .footer-brand span {
+    font-size: 10px;
+  }
+
     }
  
